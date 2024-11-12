@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Masyarakat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Informasi Masyarakat</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#berita">Berita</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#artikel">Artikel</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <section id="berita" class="mb-4">
+            <h2>Berita Terbaru</h2>
+            <div class="row" id="beritaContainer"></div>
+        </section>
+
+        <section id="artikel" class="mb-4">
+            <h2>Artikel Populer</h2>
+            <div class="row" id="artikelContainer"></div>
+        </section>
+
+        <section id="kontak" class="mb-4">
+            <h2>Kontak Kami</h2>
+            <form id="contactForm" class="bg-light p-4 rounded">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea class="form-control" id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Kirim Pesan</button>
+            </form>
+            <div id="formResponse" class="mt-3"></div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Informasi Masyarakat. All rights reserved.</p>
+    </footer>
+
+    <script src="script_.js"></script>
+</body>
+</html>
